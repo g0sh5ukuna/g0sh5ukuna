@@ -1,56 +1,74 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=0969DA&center=true&vCenter=true&width=600&lines=Consultant+DevSecOps+freelance;Fondateur+de+Gonruwa+Technologie;ClarityOps+%E2%80%94+en+production;CTF+handle+%3A+kur0r0" alt="Josué SOUNON" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=0969DA&center=true&vCenter=true&width=620&lines=Consultant+DevSecOps+freelance;Audit+%C2%B7+Hardening+%C2%B7+CI%2FCD+s%C3%A9curis%C3%A9;Conformit%C3%A9+RGPD+%26+APDP+B%C3%A9nin;CTF+handle+%3A+kur0r0" alt="Josué SOUNON" />
 
 **Josué SOUNON** · *Conceptor*
 Abomey-Calavi / Cotonou, Bénin
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/joshsounon07)
-[![ClarityOps](https://img.shields.io/badge/clarityops.space-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=white)](https://clarityops.space)
 [![Email](https://img.shields.io/badge/Me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:emmanueldegbey3@gmail.com)
 
 </div>
 
 ---
 
-Je construis et je sécurise des produits SaaS de bout en bout, seul : architecture, code,
-pipeline CI/CD, hardening, conformité, déploiement, exploitation.
+Consultant DevSecOps freelance. J'interviens sur des applications déjà construites pour
+les auditer, les durcir et automatiser leur sécurité — et je livre aussi des projets
+complets de bout en bout, seul : architecture, code, pipeline, déploiement, exploitation.
 
-**Lauréat DEV AWARDS 2026** — projet ClarityOps.
+Fondateur de **Gonruwa Technologie**.
 
 <br>
 
 <details>
-<summary><b>🔐 &nbsp;Ce que je fais concrètement en DevSecOps</b></summary>
+<summary><b>🔐 &nbsp;Sur quoi j'interviens</b></summary>
 
 <br>
 
-- **Audit applicatif** — OWASP Top 10:2025, ASVS 5.0, revue de code orientée exploitation
-- **Shift-left CI/CD** — SAST (Semgrep, Bandit), SCA (Trivy, OSV-Scanner), scan de secrets (Gitleaks, TruffleHog), IaC (Checkov)
-- **Hardening infra** — Ubuntu LTS, UFW + Fail2Ban, SSH non-standard, Nginx + CSP/HSTS, Certbot
-- **Triage CVE** — priorisation par exploitabilité réelle, pas par score CVSS brut
-- **Conformité** — RGPD (UE) et APDP (Bénin), cartographie des traitements, minimisation, durées de conservation
+**Audit applicatif**
+Revue de code orientée exploitation, référentiels OWASP Top 10:2025 et ASVS 5.0.
+Django/DRF, FastAPI, Next.js, Flutter, Solidity. Rapport priorisé par exploitabilité réelle.
+
+**Shift-left CI/CD**
+Intégration de la sécurité dans le pipeline plutôt qu'en fin de chaîne :
+SAST (Semgrep, Bandit) · SCA (Trivy, OSV-Scanner) · scan de secrets (Gitleaks, TruffleHog) ·
+IaC (Checkov) · gating de merge sur seuils de sévérité.
+
+**Hardening infrastructure**
+Ubuntu LTS · UFW + Fail2Ban · SSH sur port non-standard, clés uniquement ·
+Nginx avec CSP, HSTS, rate limiting · Certbot · conteneurs non-root, multi-stage,
+surface d'attaque réduite.
+
+**Triage de vulnérabilités**
+Priorisation par exploitabilité dans *ton* contexte, pas par score CVSS brut.
+Une CVE critique dans une dépendance jamais atteinte par un chemin d'exécution
+passe après une injection moyenne sur un endpoint public.
+
+**Remédiation**
+Je ne livre pas qu'un rapport. Je corrige, je prouve la correction par un test,
+et je laisse le garde-fou en CI pour que la faille ne revienne pas.
 
 </details>
 
 <details>
-<summary><b>🏗️ &nbsp;Produits Gonruwa Technologie</b></summary>
+<summary><b>🧭 &nbsp;Comment je travaille</b></summary>
 
 <br>
 
-| Produit | Statut | Ce que c'est |
-|---|---|---|
-| **[ClarityOps](https://clarityops.space)** | 🟢 Production | SaaS de gestion de contrats freelance, multi-juridictions (BJ · CI · SN · UE) |
-| **Loumarket** | 🟡 Refonte | Marketplace e-commerce — Django + Next.js |
-| **Docflow** | 🔵 Développement | Pipeline de traduction documentaire PDF / EPUB / DOCX |
+**Diagnostic avant correction. Toujours.**
+Un symptôme n'est pas une cause. Je remonte à la cause racine avant d'écrire une ligne,
+sinon on corrige le même bug trois fois sous trois formes différentes.
 
-**ClarityOps — chaîne de preuve** : chaque contrat signé passe par
-`SHA-256` → signature `Ed25519` → horodatage `RFC 3161` (TSA) → ancrage `OpenTimestamps` sur Bitcoin.
-La preuve reste vérifiable même si le service disparaît.
-Escrow via FedaPay · génération PDF WeasyPrint · ancrage différé par Celery Beat.
+**Pas de macroplanning.**
+Le problème est décomposé en actions courtes, chacune avec un critère de validation binaire.
+On avance quand c'est prouvé — compilation, test, log — pas quand ça a l'air de marcher.
 
-**Docflow — double chemin d'extraction** : PDF natif via PyMuPDF, PDF scanné via
-DocLayout-YOLO. Traduction NLLB-200 / Opus-MT en local (CTranslate2), fallback API DeepSeek.
+**Honnêteté sur le risque.**
+Si une décision d'architecture a un angle mort, je le dis avant, pas au post-mortem.
+Si un délai est intenable, je le dis à la signature, pas à la livraison.
+
+**Distinction explicite** entre fait vérifié, estimation raisonnée et opinion.
+Une version, un article de loi, un CVE : sourcé ou pas affirmé.
 
 </details>
 
@@ -75,11 +93,12 @@ DocLayout-YOLO. Traduction NLLB-200 / Opus-MT en local (CTranslate2), fallback A
 ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
 **Infra & sécurité**
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aqua&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
 **Mobile & blockchain**
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
@@ -88,18 +107,23 @@ DocLayout-YOLO. Traduction NLLB-200 / Opus-MT en local (CTranslate2), fallback A
 </details>
 
 <details>
-<summary><b>🌍 &nbsp;Pourquoi les paiements et la conformité UEMOA</b></summary>
+<summary><b>🌍 &nbsp;Le contexte ouest-africain, concrètement</b></summary>
 
 <br>
 
-Un SaaS vendu au Bénin ne peut pas encaisser avec Stripe : la couverture UEMOA passe par
-**FedaPay** et **Kkiapay**, avec le Mobile Money comme moyen dominant, pas la carte.
+**Paiement.** Un service vendu au Bénin ne peut pas encaisser avec Stripe.
+La couverture UEMOA passe par FedaPay ou Kkiapay, et le moyen dominant est le
+Mobile Money, pas la carte bancaire. Ça change le parcours de paiement, la gestion
+des échecs, la réconciliation — pas juste le nom du prestataire.
 
-Et un traitement de données personnelles au Bénin relève de la **loi n° 2017-20 (Code du Numérique)**
-et de l'**APDP**, pas seulement du RGPD. Ce sont deux régimes distincts qu'il faut satisfaire
-simultanément quand on sert des clients des deux côtés.
+**Données personnelles.** Un traitement au Bénin relève de la **loi n° 2017-20
+(Code du Numérique)** et de l'**APDP**, pas seulement du RGPD. Deux régimes distincts
+à satisfaire en même temps dès qu'on sert des clients des deux côtés.
 
-C'est là que je suis utile : la partie que les prestataires hors zone traitent mal.
+**Réseau.** Concevoir pour une connexion instable et un forfait data compté :
+budget de performance, dégradation gracieuse, pas de bundle de 3 Mo.
+
+C'est la partie que les prestataires hors zone traitent mal, ou pas du tout.
 
 </details>
 
