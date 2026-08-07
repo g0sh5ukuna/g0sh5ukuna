@@ -139,9 +139,8 @@ C'est la partie que les prestataires hors zone traitent mal, ou pas du tout.
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/g0sh5ukuna/g0sh5ukuna/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/g0sh5ukuna/g0sh5ukuna/output/snake.svg" />
-  <img alt="graphe de contributions animé" src="https://raw.githubusercontent.com/g0sh5ukuna/g0sh5ukuna/output/snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=g0sh5ukuna&hide_border=true&bg_color=00000000&color=768390&line=0969da&point=0969da&area=true&area_color=0969da" />
+  <img width="95%" alt="graphe d'activité" src="https://github-readme-activity-graph.vercel.app/graph?username=g0sh5ukuna&hide_border=true&bg_color=00000000&color=57606a&line=0969da&point=0969da&area=true&area_color=0969da" />
 </picture>
 
 </div>
